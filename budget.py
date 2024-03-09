@@ -76,12 +76,16 @@ def main():
     food = Category("Food")
     entertainment = Category("Entertainment")
     business = Category("Business")
+
     food.deposit(900, "deposit")
     entertainment.deposit(900, "deposit")
     business.deposit(900, "deposit")
     food.withdraw(105.55, "groceries")
     entertainment.withdraw(33.40, "movies")
     business.withdraw(10.99, "office supplies")
+
+    print(f"{food}\n{entertainment}\n{business}")
+
     print(create_spend_chart([business, food, entertainment]))
 
 
