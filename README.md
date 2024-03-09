@@ -49,3 +49,46 @@ To check the balance of any category:
 ```python
 print(food.get_balance())
 ```
+
+### Spending Chart
+
+To visualize spending across categories, use the create_spend_chart function:
+
+```python
+from budget_app import create_spend_chart
+
+print(create_spend_chart([food, clothing, entertainment]))
+```
+
+### Output Example
+
+The budget app provides a detailed textual representation of each category and a bar chart for spending visualization. Here's an example of what the output might look like:
+
+```python
+*************Food*************
+Initial deposit        1000.00
+Groceries               -100.00
+Total: 900.00
+
+Percentage spent by category
+100|          
+ 90|          
+ 80|          
+ 70|          
+ 60| o        
+ 50| o        
+ 40| o        
+ 30| o        
+ 20| o  o     
+ 10| o  o  o  
+  0| o  o  o  
+    ----------
+     F  C  E  
+     o  l  n  
+     o  o  t  
+     d  t  e  
+        h  r  
+        i  a  
+        n  i  
+        g  n
+```
