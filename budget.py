@@ -84,7 +84,7 @@ def main():
     entertainment.withdraw(33.40, "movies")
     business.withdraw(10.99, "office supplies")
 
-    print(f"{food}\n{entertainment}\n{business}")
+    print(f"{food}\n\n{entertainment}\n\n{business}\n")
 
     print(create_spend_chart([business, food, entertainment]))
 
